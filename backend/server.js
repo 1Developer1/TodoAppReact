@@ -8,7 +8,7 @@ app.use(cors());
 app.use(express.json());
 
 // Veritabanı bağlantısı
-const db = new sqlite3.Database('./ybackend/todos.db', (err) => {
+const db = new sqlite3.Database('./backend/todos.db', (err) => {
   if (err) {
     console.error('Veritabanı bağlantı hatası:', err.message);
   }
