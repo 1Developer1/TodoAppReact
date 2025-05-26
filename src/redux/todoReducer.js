@@ -63,38 +63,52 @@ export const todoReducer = (state = initialState, action) => {
   }
 };
 
-// 3. Action Creators
-export const fetchTodosAction = (todos) => ({
-  type: FETCH_TODOS,
-  payload: todos
-});
+// Action Creators
+export const fetchTodosAction = (todos) => {
+  return {
+    type: FETCH_TODOS,
+    payload: todos
+  };
+};
 
-export const addTodoAction = (todo) => ({
-  type: ADD_TODO,
-  payload: todo
-});
+export const addTodoAction = (todo) => {
+  return {
+    type: ADD_TODO,
+    payload: todo
+  };
+};
 
-export const deleteTodoAction = (id) => ({
-  type: DELETE_TODO,
-  payload: id
-});
+export const deleteTodoAction = (id) => {
+  return {
+    type: DELETE_TODO,
+    payload: id
+  };
+};
 
-export const toggleTodoAction = (todo) => ({
-  type: TOGGLE_TODO,
-  payload: todo
-});
+export const toggleTodoAction = (todo) => {
+  return {
+    type: TOGGLE_TODO,
+    payload: todo
+  };
+};
 
-export const editTodoAction = (todo) => ({
-  type: EDIT_TODO,
-  payload: todo
-});
+export const editTodoAction = (todo) => {
+  return {
+    type: EDIT_TODO,
+    payload: todo
+  };
+};
 
-export const setLoadingAction = (isLoading) => ({
-  type: SET_LOADING,
-  payload: isLoading
-});
+export const setLoadingAction = (isLoading) => {
+  return {
+    type: SET_LOADING,
+    payload: isLoading
+  };
+};
 
-export const setErrorAction = (error) => ({
-  type: SET_ERROR,
-  payload: error
-});
+export const setErrorAction = (error) => {
+  return {
+    type: SET_ERROR,
+    payload: error
+  };
+};

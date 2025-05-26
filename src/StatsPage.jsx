@@ -5,7 +5,7 @@ import { useSelector } from 'react-redux';
 
 const StatsPage = () => {
   // Redux state'inden todoları çekiyoruz - artık useLocation'a ihtiyacımız yok
-  const todos = useSelector(state => state.todos);
+  const todos = useSelector(state => state.todos.todos);
    
   // Grafik verilerini oluşturma
   const chartData = [
